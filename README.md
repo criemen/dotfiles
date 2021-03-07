@@ -3,11 +3,13 @@ Dotfiles @criemen
 
 A simple set of dotfiles, based on [dotbot]: https://github.com/anishathalye/dotbot.
 
-To keep submodules at their proper versions, you could include something like
-`git submodule update --init --recursive` in your `install.conf.yaml`.
-
 To upgrade your submodules to their latest versions, you could periodically run
 `git submodule update --init --remote`.
+
+To install, run either of these options (depending on SSH key availability) for all users
+on the affected machine:
+* `git clone git@github.com:criemen/dotfiles.git && cd dotfiles && ./install && sudo chsh -s $(which zsh)`
+* `git clone https://github.com/criemen/dotfiles.git && cd dotfiles && ./install && sudo chsh -s $(which zsh)`
 
 License
 -------
