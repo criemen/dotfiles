@@ -11,6 +11,9 @@ on the affected machine:
 * `git clone git@github.com:criemen/dotfiles.git && cd dotfiles && ./install && sudo chsh -s $(which zsh)`
 * `git clone https://github.com/criemen/dotfiles.git && cd dotfiles && ./install && sudo chsh -s $(which zsh)`
 
+
+To update, run `cd ~/dotfiles && git pull && ./install`.
+
 License
 -------
 
