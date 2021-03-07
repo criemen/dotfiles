@@ -72,6 +72,8 @@ COMPLETION_WAITING_DOTS="true"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git z sudo systemd)
 
+source $ZSH/oh-my-zsh.sh
+
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
@@ -90,7 +92,7 @@ fi
 # see https://wiki.archlinux.org/index.php/Java_Runtime_Environment_fonts
 if [[ -z $SSH_CONNECTION ]]; then
   export _JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=gasp'
-else
+fi
 
 
 # Compilation flags
@@ -107,5 +109,3 @@ else
 
 # disable dotnet core telemetry
 export DOTNET_CLI_TELEMETRY_OPTOUT=1
-# include computer-specific setup, mostly extra PATHs
-source $HOME/.zshrc_local
