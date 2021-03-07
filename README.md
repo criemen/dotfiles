@@ -8,8 +8,8 @@ To upgrade your submodules to their latest versions, you could periodically run
 
 To install, run either of these options (depending on SSH key availability) for all users
 on the affected machine:
-* `git clone git@github.com:criemen/dotfiles.git && cd dotfiles && ./install && sudo chsh -s $(which zsh)`
-* `git clone https://github.com/criemen/dotfiles.git && cd dotfiles && ./install && sudo chsh -s $(which zsh)`
+* `git clone git@github.com:criemen/dotfiles.git && cd dotfiles && ./install && sudo chsh -s $(which zsh) $USER`
+* `git clone https://github.com/criemen/dotfiles.git && cd dotfiles && ./install && sudo chsh -s $(which zsh) $USER`
 
 
 To update, run `cd ~/dotfiles && git pull && ./install`.
