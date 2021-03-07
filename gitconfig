@@ -1,0 +1,13 @@
+[user]
+	name = Cornelius Riemenschneider
+[pull]
+	ff = only
+[push]
+    default = current
+[color]
+    ui = auto
+[pack]
+    threads = 0
+[include]
+    # contains the e-mail address used for commits
+	path = .gitconfig_local
