@@ -107,5 +107,6 @@ fi
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+alias gs="git status"
 # disable dotnet core telemetry
 export DOTNET_CLI_TELEMETRY_OPTOUT=1
