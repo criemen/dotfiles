@@ -1,0 +1,48 @@
+theme = "solarized-light"
+icons = "awesome5"
+
+
+[[block]]
+block = "networkmanager"
+on_click = "nm-connection-editor"
+interface_name_exclude = ["br\\-[0-9a-f]{12}", "docker\\d+"]
+interface_name_include = []
+max_ssid_width = 12
+
+
+[[block]]
+block = "disk_space"
+path = "/"
+alias = "/"
+unit = "GiB"
+format = "{used}{unit} used {available}{unit} free"
+
+
+[[block]]
+block = "battery"
+interval = 10
+format = "{percentage}% {time}"
+driver = "upower"
+
+[[block]]
+block = "memory"
+display_type = "memory"
+format_mem = "{Mug}GB/{MTg}GB"
+
+[[block]]
+block = "cpu"
+interval = 1
+format = "{barchart} {utilization}%"
+
+[[block]]
+block = "load"
+interval = 1
+format = "{1m}"
+
+[[block]]
+block = "sound"
+
+[[block]]
+block = "time"
+interval = 5
+format = "%a %d.%m %T"

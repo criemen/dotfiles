@@ -1,0 +1,7 @@
+theme = "solarized-light"
+icons = "awesome5"
+
+[[block]]
+block = "time"
+interval = 5
+format = "%a %d.%m %T"

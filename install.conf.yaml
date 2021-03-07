@@ -6,6 +6,11 @@
     ~/.zshrc:
       path: zshrc
       force: true
+    ~/.config/i3status-rust/:
+      glob: true
+      path: i3status-rust/*.toml
+      create: true
+      force: true
 - shell:
   -
     command: git submodule update --init --recursive
