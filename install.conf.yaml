@@ -17,5 +17,5 @@
     command: if [ "$EUID" = "0" ]; then chsh -s $(which zsh) ; fi
     description: Set shell to zsh (only for root though, no password prompt required otherwise)
   -
-    command: if [[ -n "$CODESPACES" ]]; then sudo chsh -s $(which zsh) ; fi
+    command: if [[ -n "$CODESPACES" ]]; then sudo chsh -s $(which zsh) $USER ; fi
     description: Set shell to zsh on codespaces, where we have passwordless sudo
