@@ -108,5 +108,16 @@ fi
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 alias gs="git status"
+alias ctr="codeql test run -j16"
+alias ctrk="codeql test run --keep-databases -j16"
+alias ctrkl="codeql test run --keep-databases --learn -j16"
+alias ctrl="codeql test run --learn -j16"
+
+
 # disable dotnet core telemetry
 export DOTNET_CLI_TELEMETRY_OPTOUT=1
+
+# local extension point, mainly to set PATH
+if [[ -a ~/.zshrc_local ]]; then
+    source .zshrc_local
+fi
