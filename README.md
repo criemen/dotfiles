@@ -1,7 +1,7 @@
 Dotfiles @criemen
 =================
 
-A simple set of dotfiles, based on [dotbot]: https://github.com/anishathalye/dotbot.
+A simple set of dotfiles, based on [dotbot](https://github.com/anishathalye/dotbot).
 
 To upgrade your submodules to their latest versions, you could periodically run
 `git submodule update --init --remote`.
