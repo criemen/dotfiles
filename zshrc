@@ -119,5 +119,5 @@ export DOTNET_CLI_TELEMETRY_OPTOUT=1
 
 # local extension point, mainly to set PATH
 if [[ -a ~/.zshrc_local ]]; then
-    source .zshrc_local
+    source ~/.zshrc_local
 fi

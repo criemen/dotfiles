@@ -11,7 +11,14 @@
       path: i3status-rust/*.toml
       create: true
       force: true
-# TODO: i3 config, potentially a font or two?, screen background
+    ~/.background.png:
+      path: background.png
+      force: true
+    ~/.fehbg:
+      path: fehbg
+      force: true
+
+# TODO: i3 config, potentially a font or two?
 # problematic: i3 config needs some parametrization for work vs. personal computer for autostart
 
 - shell:
