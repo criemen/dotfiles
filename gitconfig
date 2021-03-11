@@ -11,3 +11,8 @@
 [include]
     # contains the e-mail address used for commits
 	path = .gitconfig_local
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
