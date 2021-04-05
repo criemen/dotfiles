@@ -7,15 +7,13 @@ block = "networkmanager"
 on_click = "nm-connection-editor"
 interface_name_exclude = ["br\\-[0-9a-f]{12}", "docker\\d+"]
 interface_name_include = []
-max_ssid_width = 12
 
 
 [[block]]
 block = "disk_space"
 path = "/"
 alias = "/"
-unit = "GiB"
-format = "{used}{unit} used {available}{unit} free"
+format = "{used} used {available} free"
 
 
 [[block]]
@@ -27,7 +25,7 @@ driver = "upower"
 [[block]]
 block = "memory"
 display_type = "memory"
-format_mem = "{Mug}GB/{MTg}GB"
+format_mem = "{mem_used;G}/{mem_total;G}"
 
 [[block]]
 block = "cpu"
