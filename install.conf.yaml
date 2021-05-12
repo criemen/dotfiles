@@ -6,6 +6,9 @@
     ~/.zshrc:
       path: zshrc
       force: true
+    ~/.oh-my-zsh:
+      path: oh-my-zsh
+      force: true
     ~/.config/i3status-rust/:
       glob: true
       path: i3status-rust/*.toml
