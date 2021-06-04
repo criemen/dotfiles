@@ -7,3 +7,6 @@
 	path = oh-my-zsh
 	url = https://github.com/ohmyzsh/ohmyzsh
 	shallow = true
+[submodule "menlo-powerline"]
+	path = menlo-powerline
+	url = https://github.com/abertsch/Menlo-for-Powerline
