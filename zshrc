@@ -1,6 +1,8 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
+# see also https://github.com/ibraheemdev/modern-unix
+
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 
@@ -112,7 +114,8 @@ alias ctr="codeql test run -j16"
 alias ctrk="codeql test run --keep-databases -j16"
 alias ctrkl="codeql test run --keep-databases --learn -j16"
 alias ctrl="codeql test run --learn -j16"
-
+alias cat="bat"
+alias ls="lsd"
 
 # disable dotnet core telemetry
 export DOTNET_CLI_TELEMETRY_OPTOUT=1
