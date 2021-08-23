@@ -92,7 +92,7 @@ fi
 
 # Nice(r) fonts for Java applications, only set locally
 # see https://wiki.archlinux.org/index.php/Java_Runtime_Environment_fonts
-if [[ -z $SSH_CONNECTION ]]; then
+if [[ -z $SSH_CONNECTION && -z $CODESPACES ]]; then
   export _JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=gasp'
 fi
 
@@ -120,6 +120,8 @@ if [[ -z $CODESPACES ]]; then
   alias cat="bat"
   alias ls="exa"
 fi
+
+alias bear_codeql="./clean && bear ./build target/c64/libtrace64.so target/c64/preload_tracer target/c64/clrtracer64.so target/c64/extractor target/c64/lmdb-static.a target/c64/brotli-static.a target/c64/zlib-static.a target/c64/runner target/c64/runner-linux -j32"
 
 # disable dotnet core telemetry
 export DOTNET_CLI_TELEMETRY_OPTOUT=1
