@@ -114,8 +114,12 @@ alias ctr="codeql test run -j16"
 alias ctrk="codeql test run --keep-databases -j16"
 alias ctrkl="codeql test run --keep-databases --learn -j16"
 alias ctrl="codeql test run --learn -j16"
-alias cat="bat"
-alias ls="lsd"
+
+# only set aliases if not on codespace
+if [[ -z $CODESPACES ]]; then
+  alias cat="bat"
+  alias ls="exa"
+fi
 
 # disable dotnet core telemetry
 export DOTNET_CLI_TELEMETRY_OPTOUT=1

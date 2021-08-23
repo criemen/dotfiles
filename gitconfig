@@ -18,3 +18,9 @@
 	required = true
 [init]
 	defaultBranch = main
+[credential]
+	helper = cache
+[fetch]
+	parallel = 10
+[submodule]
+	fetchJobs = 10
